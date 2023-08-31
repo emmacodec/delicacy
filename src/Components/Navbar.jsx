@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import {AiOutlineSearch, AiFillTag} from 'react-icons/ai';
 import {BsFillCartFill, BsFillSaveFill} from 'react-icons/bs';
@@ -7,11 +7,14 @@ import {FaWallet, FaUserFriends} from 'react-icons/fa';
 import {MdHelp, MdFavorite} from 'react-icons/md';
 
 const Navbar = () => {
+
+  const [nav, setNav] = useState(false);
+
   return (
     <div className='max-w-[1640px] mx-auto flex justify-between items-center p-4'>
       {/*Left side*/ }
       <div className='flex items-center'>
-        <div className='cursor-pointer'>
+        <div onClick={()=>setNav(!nav)} className='cursor-pointer'>
           <AiOutlineMenu size={30} />
         </div>
         <h1 className='text-2xl sm:text-3xl lg:text-4xl px-2'>
@@ -38,11 +41,15 @@ const Navbar = () => {
       {/*Mobile Menu*/ }
 
       {/*Overlay*/ }
-      <div className='bg-black/80 fixed w-full h-screen z-10 top-0 left-0'></div>
+      {nav ? <div className='bg-black/80 fixed w-full h-screen z-10 top-0 left-0'></div> : ''}
 
       {/*Side Menu*/ }
-      <div className='fixed w-[300px] h-screen top-0 left-0 bg-white z-10 duration-300'>
-        <AiOutlineClose size={30} className='absolute right-4 top-4 cursor-pointer' />
+      <div className={nav ? 'fixed w-[300px] h-screen top-0 left-0 bg-white z-10 duration-300' : 'fixed w-[300px] h-screen top-[-100%] left-0 bg-white z-10 duration-300'}>
+        <AiOutlineClose 
+        onClick={()=>setNav(!nav)} 
+        size={30} 
+        className='absolute right-4 top-4 cursor-pointer' />
+        
         <h2 className='text-2xl p-4'>Best <span className='font-bold'>Delicacies</span></h2>
         <nav>
           <ul className='flex flex-col p-4 text-gray-800'>

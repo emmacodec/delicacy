@@ -1,2 +1,2 @@
 Building a responsive design using flexbox, tailwind and grid layouts. Pulling all of data from the data.js file to
-simulate an API response. Filtering through data using the javascript filter array method.
+simulate an API response without using axios to make the API call. Filtering through data using the javascript filter array method.
