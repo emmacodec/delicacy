@@ -1,5 +1,8 @@
 import React from 'react';
 import {data} from '../Data/data';
+import {TbTruckDelivery} from 'react-icons/tb';
+import {FaWallet, FaUserFriends} from 'react-icons/fa';
+import {BsFillCartFill} from 'react-icons/bs'
 
 const Delicacies = () => {
     console.log(data);
@@ -22,10 +25,10 @@ const Delicacies = () => {
         <div>
             <p>Filter Price</p>
             <div>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
+                <FaUserFriends />
+                <FaWallet />
+                <TbTruckDelivery />
+                <BsFillCartFill />
             </div>
         </div>
       </div>

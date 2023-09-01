@@ -2,16 +2,20 @@ import Delicacies from "./Components/Delicacies";
 import Headlines from "./Components/Headlines";
 import Home from "./Components/Home";
 import Navbar from "./Components/Navbar";
+import Bookings from "./Pages/Bookings";
+import Payment from "./Pages/Payment";
+import {Route, Routes} from 'react-router-dom';
 
 
 function App() {
   return (
-    <div>
+    <>
       <Navbar />
-      <Home />
-      <Headlines />
-      <Delicacies />
-    </div>
+      <Routes>
+        <Route path="/Bookings" element={<Bookings />} />
+        <Route path="/Payment" element={<Payment />} /> 
+      </Routes>
+    </>
   );
 }
 

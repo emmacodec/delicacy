@@ -5,6 +5,7 @@ import {BsFillCartFill, BsFillSaveFill} from 'react-icons/bs';
 import {TbTruckDelivery} from 'react-icons/tb';
 import {FaWallet, FaUserFriends} from 'react-icons/fa';
 import {MdHelp, MdFavorite} from 'react-icons/md';
+import {Link} from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -55,11 +56,15 @@ const Navbar = () => {
           <ul className='flex flex-col p-4 text-gray-800'>
             <li className='text-xl py-4 flex'><TbTruckDelivery size={25} className='mr-4' /> Orders</li>
             <li className='text-xl py-4 flex'><MdFavorite size={25} className='mr-4' /> Favorites</li>
+            <Link to="/Payment">
             <li className='text-xl py-4 flex'><FaWallet size={25} className='mr-4' /> Wallet</li>
+            </Link>
             <li className='text-xl py-4 flex'><MdHelp size={25} className='mr-4' /> Help</li>
             <li className='text-xl py-4 flex'><AiFillTag size={25} className='mr-4' /> Promotions</li>
             <li className='text-xl py-4 flex'><BsFillSaveFill size={25} className='mr-4' /> Best Ones</li>
+            <Link to="/Bookings">
             <li className='text-xl py-4 flex'><FaUserFriends size={25} className='mr-4' /> Invite Friends</li>
+            </Link>
           </ul>
         </nav>
       </div>
