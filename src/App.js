@@ -11,6 +11,9 @@ function App() {
   return (
     <>
       <Navbar />
+      <Home />
+      <Headlines />
+      <Delicacies />
       <Routes>
         <Route path="/Bookings" element={<Bookings />} />
         <Route path="/Payment" element={<Payment />} /> 

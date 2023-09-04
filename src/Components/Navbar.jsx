@@ -54,21 +54,31 @@ const Navbar = () => {
         <h2 className='text-2xl p-4'>Best <span className='font-bold'>Delicacies</span></h2>
         <nav>
           <ul className='flex flex-col p-4 text-gray-800'>
+            <Link to='/'>
             <li className='text-xl py-4 flex'><TbTruckDelivery size={25} className='mr-4' /> Orders</li>
+            </Link>
+            <Link to='/'>
             <li className='text-xl py-4 flex'><MdFavorite size={25} className='mr-4' /> Favorites</li>
-            <Link to="/Payment">
+            </Link>
+           <Link to="/Payment">
             <li className='text-xl py-4 flex'><FaWallet size={25} className='mr-4' /> Wallet</li>
             </Link>
+            <Link to='/'>
             <li className='text-xl py-4 flex'><MdHelp size={25} className='mr-4' /> Help</li>
+            </Link>
+            <Link to='/'>
             <li className='text-xl py-4 flex'><AiFillTag size={25} className='mr-4' /> Promotions</li>
+            </Link>
+            <Link to='/'>
             <li className='text-xl py-4 flex'><BsFillSaveFill size={25} className='mr-4' /> Best Ones</li>
+            </Link>
             <Link to="/Bookings">
             <li className='text-xl py-4 flex'><FaUserFriends size={25} className='mr-4' /> Invite Friends</li>
             </Link>
           </ul>
         </nav>
       </div>
-    </div>
+   </div>
   );
 };
 

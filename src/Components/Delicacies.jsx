@@ -24,11 +24,11 @@ const Delicacies = () => {
         {/*filter price*/}
         <div>
             <p>Filter Price</p>
-            <div>
-                <FaUserFriends />
-                <FaWallet />
-                <TbTruckDelivery />
-                <BsFillCartFill />
+            <div className='flex justify-between'>
+                <FaUserFriends className='text-gray-800' />
+                <FaWallet  className='text-gray-800'/>
+                <TbTruckDelivery className='text-gray-800' />
+                <BsFillCartFill className='text-gray-800' />
             </div>
         </div>
       </div>
