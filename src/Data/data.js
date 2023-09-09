@@ -106,7 +106,7 @@ export const data = [
     {
         id: 14,
         name: 'Calamari',
-        category: 'Boiled Octopus',
+        category: 'Meat',
         image: 'https://th.bing.com/th/id/OIP.RhNLC3GVV64B3e_l0Rr2dQHaEK?pid=ImgDet&rs=1',
         price: '$750',
     },
@@ -114,7 +114,7 @@ export const data = [
     {
         id: 15,
         name: 'Baked Chicken',
-        category: 'Chicken',
+        category: 'Meat',
         image: 'https://th.bing.com/th/id/R.257166cf93fa896a5eb9462d66299536?rik=8kOZCLA3A5aEuQ&pid=ImgRaw&r=0',
         price: '$300',
     },
@@ -122,7 +122,7 @@ export const data = [
     {
         id: 16,
         name: 'Wings',
-        category: 'Turkey',
+        category: 'Meat',
         image: 'https://whereismyspoon.co/wp-content/uploads/2020/10/turkey-wings-recipe.jpg',
         price: '$1500',
     },

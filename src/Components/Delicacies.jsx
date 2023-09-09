@@ -29,6 +29,8 @@ const filterType = (category) => {
                 <button onClick={()=>filterType('Burger')} className='border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white m-1'>Burgers</button>
                 <button onClick={()=>filterType('Meat')} className='border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white m-1'>Meats</button>
                 <button onClick={()=>filterType('Pizza')} className='border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white m-1'>Pizza</button>
+                <button onClick={()=>filterType('Cereal')} className='border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white m-1'>Cereal</button>
+                <button onClick={()=>filterType('Melon')} className='border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white m-1'>Melon</button>
             </div>
         </div>
         {/*filter price*/}
